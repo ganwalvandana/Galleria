@@ -1,0 +1,26 @@
+<%- include('../partials/head.ejs') %>
+<link rel="stylesheet" href="/auth.css">
+<link rel="stylesheet" href="/form.css">
+<link rel="stylesheet" href="/main.css">
+</head>
+<body class="login-main">
+    <!-- style="background-image:url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; height:100% ;"> -->
+<%- include('../partials/nav.ejs') %>
+
+<main>
+
+    <form action="/login" method="POST" class="login-form">
+        <div class="form-detail">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="E-mail" name="email">
+        </div>
+        <div class="form-detail">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password">
+        </div>
+        <button type="submit"  class="btn btn-primary ">Login</button>
+        
+    </form>
+</main>
+
+<%- include('../partials/end.ejs') %>

@@ -1,0 +1,23 @@
+.login-main{
+    background-image: url("../images/abstract-technology-particle-background_52683-25766.jpg");
+    background-color: rgb(42, 122, 89);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.signup-main {
+    background-image: url("../images/abstract-technology-particle-background_52683-25766.jpg");
+    background-color: rgb(56, 63, 18);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    text-align: center;
+}

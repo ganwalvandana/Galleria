@@ -1,0 +1,28 @@
+<%- include('../partials/head.ejs') %>
+<link rel="stylesheet" href="/auth.css">
+<link rel="stylesheet" href="/form.css">
+<link rel="stylesheet" href="/main.css">
+</head>
+<body class="signup-main">
+<%- include('../partials/nav.ejs') %>
+
+<main>
+
+    <form action="/signup" method="POST" class="signup-form">
+        <div class="form-detail">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="E-mail" name="email">
+        </div>
+        <div class="form-detail">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password">
+        </div>
+        <div class="form-detail">
+            <label for="confirmPassword"> Confirm Password</label>
+            <input type="password" placeholder="confirmPassword" name="confirmPassword">
+        </div>
+        <button type="submit">Signup</button>
+        
+    </form>
+</main>
+<%- include('../partials/end.ejs') %>
