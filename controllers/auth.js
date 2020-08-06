@@ -12,3 +12,10 @@ exports.getSignup =  (req, res, next) => {
         pageTitle: 'Signup',
     });
 };
+
+exports.postLogout = (req, res, next) => {
+    req.session.destroy (err => {
+        console.log(err);
+        res.redirect('/');
+    });
+};

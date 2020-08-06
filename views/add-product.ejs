@@ -1,0 +1,31 @@
+<%- include('./partials/head.ejs') %>
+<link rel="stylesheet" href="/auth.css">
+<link rel="stylesheet" href="/form.css">
+<link rel="stylesheet" href="/product.css">
+<link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<%- include('./partials/nav.ejs') %>
+<main>
+    <div>
+        
+    <form action="/add-product" method="POST" class="addProduct-form">
+        <div class="form-detail">
+            <label for="title">Title</label>
+            <input type="text" placeholder="Title" name="title">
+        </div>
+        <div class="form-detail">
+            <label for="price">Price</label>
+            <input type="number" placeholder="Price" name="price">
+        </div>
+        <div class="form-detail">
+            <label for="description"> Confirm Password</label>
+            <textarea type="text" placeholder="Description" name="description"></textarea>
+        </div>
+        <button class="btn" type="submit">Add Product</button>
+        
+    </form>
+    </div>
+</main>
+
+<%- include('./partials/end.ejs') %>  
