@@ -1,3 +1,9 @@
+
+
+const Auth = require('../models/auth');
+
+
+
 exports.getLogin =  (req, res, next) => {
     res.render('auth/login', {
         path: '/login',

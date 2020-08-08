@@ -11,5 +11,6 @@ router.get('/', errorController.getError);
 
 router.get('/add-product', productController.getProduct);
 
+router.post('/product', productController.postProduct);
 
 module.exports = router;
